@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROCK - PAPER - SCISSORS</title>
+    <link rel="shortcut icon" href="./assets/rps_i.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./app.js" defer></script>
+    <audio id="win-audio">
+      <source src="./assets/congratulations-you-won.mp3" type="audio/mp3" />
+    </audio>
+    <audio id="draw-audio">
+      <source
+        src="./assets/Try Again! - Sound Effect for editing.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+    <audio id="lose-audio">
+      <source
+        src="./assets/ive-got-2-words-for-you-loser.mp3"
+        type="audio/mp3"
+      />
+    </audio>
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <div>
+          <h1>ROCK - PAPER - SCISSORS GAME</h1>
+        </div>
+        <div class="rules">
+          <span class="rules-image">
+            <img src="./assets/rps.png" class="image" alt="rules-image" />
+          </span>
+          <span class="rules-text">
+            <p class="rules-text rules-title">Rules :</p>
+            <p>- Scissors beats Paper;</p>
+            <p>- Rock beats Scissors;</p>
+            <p>- Paper beats Rock;</p>
+          </span>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-content">
+        <div class="players">
+          <span>
+            <!-- <label for="name">PLAYER:</label> -->
+            <input
+              type="text"
+              id="player-name"
+              name="player"
+              placeholder=" Insert Your Name Here"
+            />
+          </span>
+          <span>
+            <p>VS</p>
+          </span>
+          <span>
+            <p>COMPUTER</p>
+          </span>
+        </div>
+        <div class="main-game-options">
+          <span class="player-options">
+            <label for="rock-player-input"
+              ><img
+                src="./assets/rock.jpg"
+                class="image mainimage-unchecked"
+                id="rock-image"
+                alt="rock-image"
+            /></label>
+            <input
+              type="radio"
+              name="player-options"
+              class="player-inputs"
+              id="rock-player-input"
+              value="0"
+            />
+
+            <label for="paper-player-input"
+              ><img
+                src="./assets/paper.jpeg"
+                class="image mainimage-unchecked"
+                id="paper-image"
+                alt="paper-image"
+            /></label>
+            <input
+              type="radio"
+              name="player-options"
+              class="player-inputs"
+              id="paper-player-input"
+              value="1"
+            />
+
+            <label for="scissors-player-input"
+              ><img
+                src="./assets/scissors.jpg"
+                class="image mainimage-unchecked"
+                id="scissors-image"
+                alt="scissors-image"
+            /></label>
+            <input
+              type="radio"
+              name="player-options"
+              class="player-inputs"
+              id="scissors-player-input"
+              value="2"
+            />
+          </span>
+          <span class="play">
+            <input type="button" value="PLAY" />
+          </span>
+          <span class="computer-options">
+            <label for="rock-comp-input"
+              ><img
+                src="./assets/rock.jpg"
+                class="image mainimage-unchecked"
+                id="comp-rock-image"
+                alt="rock-image"
+            /></label>
+            <input type="radio" name="computer-options" id="rock-comp-input" />
+
+            <label for="paper-comp-input"
+              ><img
+                src="./assets/paper.jpeg"
+                class="image mainimage-unchecked"
+                id="comp-paper-image"
+                alt="paper-image"
+            /></label>
+            <input type="radio" name="computer-options" id="paper-comp-input" />
+
+            <label for="scissors-comp-input"
+              ><img
+                src="./assets/scissors.jpg"
+                class="image mainimage-unchecked"
+                id="comp-scissors-image"
+                alt="scissors-image"
+            /></label>
+            <input
+              type="radio"
+              name="computer-options"
+              id="scissors-comp-input"
+            />
+          </span>
+        </div>
+        <span class="select">Please select one option and then press PLAY</span>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>
+          <h3 id="winner-text" onchange="playAudio()">WHO WINS?</h3>
+        </div>
+        <div>
+          <h5>SCORE:</h5>
+        </div>
+        <div>
+          <span>
+            <label for="player-score">PLAYER SCORE IS :</label>
+            <input
+              type="number"
+              class="score-input"
+              name="player-score"
+              id="player-score"
+              value="0"
+            />
+          </span>
+
+          <span>
+            <label for="comp-score">COMPUTER SCORE IS :</label>
+            <input
+              type="number"
+              class="score-input"
+              name="comp-score"
+              id="comp-score"
+              value="0"
+            />
+          </span>
+        </div>
+        <div class="reset">
+          <span>
+            <input type="button" value="RESET SCORES" id="reset" />
+          </span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

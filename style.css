@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: darkblue;
+  color: lightgrey;
+  height: calc(38vh);
+}
+
+.header-content h1 {
+  text-align: center;
+  padding: 10px 0px;
+  text-decoration: underline;
+}
+
+.header-content div {
+  font-size: 16px;
+  text-align: center;
+}
+
+.rules {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+}
+
+.image {
+  background-color: white;
+  width: 140px;
+  height: 140px;
+}
+
+.rules-text {
+  font-size: 24px;
+  text-align: left;
+}
+.rules-title {
+  text-align: center;
+  font-style: italic;
+}
+.players {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 240px 10px 110px;
+  column-gap: 150px;
+  font-size: 24px;
+  text-decoration: underline;
+}
+.players input {
+  font-size: 24px;
+  text-align: center;
+  text-decoration: underline;
+  border: none;
+  background-color: white;
+}
+
+.play input {
+  font-size: 24px;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+  border-radius: 20px;
+  margin-top: 25px;
+  padding: 20px;
+}
+.mainimage-unchecked {
+  border: 4px solid white;
+}
+
+.mainimage-checked {
+  border: 4px solid darkblue;
+}
+
+.main-content {
+  background-color: white;
+  height: calc(35vh);
+  border-left: 60px solid darkblue;
+  border-right: 60px solid darkblue;
+}
+
+.main-game-options {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 20px;
+  column-gap: 20px;
+}
+
+.select {
+  padding: 0px 110px;
+}
+
+.computer-options input {
+  display: none;
+}
+
+.footer-content {
+  background-color: darkblue;
+  color: lightgrey;
+  height: calc(27vh);
+}
+
+.footer-content div {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+  padding-top: 10px;
+}
+.score-input {
+  font-size: 24px;
+  width: 50px;
+  height: 30px;
+  border: none;
+  background-color: darkblue;
+  color: lightgrey;
+}
+.reset input {
+  font-size: 14px;
+  font-weight: 400;
+  background-color: green;
+  color: lightgray;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.play input:hover {
+  cursor: pointer;
+}
+
+.reset input:hover {
+  cursor: pointer;
+}
